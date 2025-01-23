@@ -15,6 +15,9 @@ module.exports = {
         '4xl' : '0px 0px 10px rgb(0, 255, 0)',
         '5xl' : '0px 0px 50px rgb(0, 255, 0)',
       },
+      boxShadow: {
+        'custom-green': '0 0 10px rgba(0, 255, 0, 0.5)', // Sombra verde
+      },
       colors: {
         customGreen: '#00FF00',
         customGray: '#3C3C3B',
