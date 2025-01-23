@@ -9,10 +9,9 @@ import {
   NavbarMenu,
   NavbarMenuItem,
   Link,
-  Button,
 } from "@heroui/react";
 
-export default function App() {
+export default function Nav() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
   const menuItems = [
@@ -26,7 +25,7 @@ export default function App() {
   return (
     <Navbar
       onMenuOpenChange={setIsMenuOpen}
-      className="bg-customGray text-white"
+      className="bg-customBlack text-white"
     >
       <NavbarContent>
         <NavbarMenuToggle
@@ -42,9 +41,8 @@ export default function App() {
 
       <NavbarContent className="hidden gap-5 sm:flex" justify="center">
         {menuItems.map((item, index) => (
-          <NavbarItem>
+          <NavbarItem key={`${item}-${index}`}>
             <Link
-              key={index}
               href={item.link}
               className="relative text-white group font-medium hover:text-customGreen transition-all duration-300"
             >

@@ -1,9 +1,15 @@
-import Nav from "./components/Nav";
+import Layout from "@/components/Layout";
+import Head from "@/components/Head";
+import ProductOverview from "@/components/ProductOverview";
+import ProductCarousel from "@/components/ProductCarousel";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-blue-600 text-white">
-      <Nav/>
-    </div>
+    <Layout>
+        <Head/>
+        <ProductOverview/>
+        <ProductCarousel/>
+    </Layout>
   );
 }
+
