@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import imgBanner from '@/assets/banner1.jpeg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faDiscord, faPlaystation, faSteam, faTwitch, faUnity, faXbox } from '@fortawesome/free-brands-svg-icons'
+import { faPlaystation, faSteam, faUnity, faXbox } from '@fortawesome/free-brands-svg-icons'
 import { faGamepad } from '@fortawesome/free-solid-svg-icons'
 
 export default function Banner() {
@@ -14,10 +14,8 @@ export default function Banner() {
             <FontAwesomeIcon icon={faPlaystation} width={100} className='' />
             <FontAwesomeIcon icon={faXbox} width={100} className='' />
             <FontAwesomeIcon icon={faSteam} width={100} className='' />
-            <FontAwesomeIcon icon={faDiscord} width={100} className='' />
             <FontAwesomeIcon icon={faGamepad} width={100} className='' />
             <FontAwesomeIcon icon={faUnity} width={100} className='' />
-            <FontAwesomeIcon icon={faTwitch} width={100} className='' />
         </div>
     </div>
   )
