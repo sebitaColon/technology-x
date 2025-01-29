@@ -60,7 +60,7 @@ export default function ProductCarousel() {
 
   return (
     <div className="w-full h-auto bg-customGrayDark flex justify-center">
-      <div className="relative w-full h-full py-10 flex items-center lg:max-w-[1300px] overflow-hidden">
+      <div className="relative w-full h-full pl-5 xs:pl-0 py-10 flex items-center lg:max-w-[1300px] overflow-hidden">
         <Button
           onClick={handlePrev}
           className="absolute left-2 top-1/2 z-10 transform -translate-y-1/2 min-w-0 w-5 p-0 bg-slate-600 text-white opacity-70"
@@ -84,7 +84,7 @@ export default function ProductCarousel() {
               key={index}
               className="flex-shrink-0 w-1/2 md:w-1/3 lg:w-1/4 px-2 text-black"
             >
-                <ProductCard/>
+              <ProductCard />
             </div>
           ))}
         </div>
