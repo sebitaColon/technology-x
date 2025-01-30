@@ -4,13 +4,13 @@ import ProductOverview from "@/components/ProductOverview";
 import ProductCarousel from "@/components/ProductCarousel";
 import Banner from "@/components/Banner";
 import CategoryCarousel from "@/components/CategoryCarousel";
-import BannerMarcas from "@/components/BannerMarcas";
+import BannerAds from "@/components/BannerAds";
 
 export default function Home() {
   return (
     <Layout>
         <Head/>
-        <BannerMarcas/>
+        <BannerAds/>
         <ProductOverview/>
         <ProductCarousel/>
         <CategoryCarousel/>

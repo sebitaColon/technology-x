@@ -16,7 +16,7 @@ export default function Banner() {
       <Image
         src={imgBanner}
         alt=""
-        className="max-h-[50vh] object-cover w-full"
+        className="h-[30vh] md:h-[50vh] object-cover w-full"
       />
       <div className="w-full h-full absolute flex gap-2 flex-col bg-overlay backdrop-blur-sm  items-center justify-center">
         <h1 className=" text-xs md:text-3xl font-bold">NUESTRAS PLATAFROMAS</h1>
