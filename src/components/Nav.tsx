@@ -33,7 +33,7 @@ export default function Nav() {
           className="sm:hidden"
         />
         <NavbarBrand>
-          <h1 className="font-bold text-3xl">
+          <h1 className="font-bold text-medium md:text-xl">
             TECHNOLOGY<span className="text-customGreen">-X</span>
           </h1>
         </NavbarBrand>
