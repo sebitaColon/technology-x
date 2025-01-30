@@ -8,7 +8,7 @@ import ACER from "@/assets/bannerACER.webp";
 import Image from "next/image";
 import { Button } from "@heroui/react";
 
-export default function BannerMarcas() {
+export default function BannerAds() {
   const banner = [
     { img: MSI, name: "MSI" },
     { img: ASUS, name: "ASUS" },

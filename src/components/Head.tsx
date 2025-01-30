@@ -6,13 +6,13 @@ import {
   faFacebook,
   faInstagram,
   faTwitch,
-  faTwitter,
+  faXTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 
 export default function Head() {
   return (
     <div className="w-full p-5 sm:px-20 sm:pt-10 md:px-0 md:pt-0 h-auto md:h-[calc(100vh-64px)] bg-customBlack md:grid grid-cols-2">
-      <div className="col-span-1 h-full flex justify-center flex-col md:pl-20">
+      <div className="col-span-1 h-full pb-10 md:pb-0 flex justify-center flex-col md:pl-20">
         <h1 className="text-xl md:text-3xl lg:text-5xl font-bold">
           MOUSE GAMER MOBA M908 IMPACT
         </h1>
@@ -41,7 +41,7 @@ export default function Head() {
             className="hover:text-customGreen hover:drop-shadow-4xl text-customGray"
           />
           <FontAwesomeIcon
-            icon={faTwitter}
+            icon={faXTwitter}
             width={20}
             className="hover:text-customGreen hover:drop-shadow-4xl text-customGray"
           />
