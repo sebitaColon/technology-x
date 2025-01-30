@@ -4,15 +4,17 @@ import ProductOverview from "@/components/ProductOverview";
 import ProductCarousel from "@/components/ProductCarousel";
 import Banner from "@/components/Banner";
 import CategoryCarousel from "@/components/CategoryCarousel";
+import BannerMarcas from "@/components/BannerMarcas";
 
 export default function Home() {
   return (
     <Layout>
         <Head/>
-        <Banner/>
+        <BannerMarcas/>
         <ProductOverview/>
         <ProductCarousel/>
         <CategoryCarousel/>
+        <Banner/>
     </Layout>
   );
 }
