@@ -1,86 +1,67 @@
+import React from "react";
+import Image from "next/image";
 import {
   faFacebook,
   faInstagram,
   faTiktok,
   faTwitch,
-  faTwitter,
   faWhatsapp,
   faXTwitter,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "@heroui/react";
-import React from "react";
-import taxData from '@/assets/taxData.jpeg'
-import Image from "next/image";
+import taxData from "@/assets/taxData.jpeg";
 
 export default function Footer() {
   return (
-    <div className="w-full h-auto relative">
-      <div className="w-full h-auto lg:grid px-5 xs:px-20 md:px-32 py-5 lg:grid-cols-4 bg-customGrayDark">
-        <div className="w-full max-h-40 flex items-center justify-center">
-            <Image src={taxData} alt='data' className="w-auto pb-2 h-20 lg:h-24"></Image>
+    <footer className="w-full">
+      <div className="w-full grid-cols-1 lg:grid-cols-4 px-5 xs:px-20 md:px-32 py-5 bg-customGrayDark grid">
+        {/* Logo or Tax Information */}
+        <div className="flex items-center justify-center">
+          <Image src={taxData} alt="Legal Info" className="h-20 lg:h-24 w-auto" />
         </div>
-        <div className="w-full h-40 border-y-1 lg:border-y-0 lg:border-x-1 border-white flex gap-4 items-center justify-center flex-col">
-          <button className="bg-gray-600 py-1 px-2 rounded-md max-w-32 md:max-w-52 transition duration-300 w-auto hover:drop-shadow-5xl hover:bg-customGreen hover:text-black">
-            Ayuda
+
+        {/* Support Buttons */}
+        <div className="border-y-1 lg:border-y-0 lg:border-x-1 border-white flex flex-col items-center justify-center gap-4 py-4">
+          <button className="bg-gray-600 py-1 px-3 rounded-md max-w-[200px] hover:bg-customGreen hover:text-black transition duration-300">
+            Support
           </button>
-          <button className="bg-gray-600 py-1 px-2 rounded-md max-w-32 md:max-w-52 transition duration-300 w-auto hover:drop-shadow-5xl hover:bg-customGreen hover:text-black">
-            Boton de arrepentimiento
+          <button className="bg-gray-600 py-1 px-3 rounded-md max-w-[200px] hover:bg-customGreen hover:text-black transition duration-300">
+            Refund Button
           </button>
         </div>
-        <div className="w-full flex gap-5 border-b-1 lg:border-b-0 lg:border-r-1 border-white items-center justify-center flex-col h-40">
-          <h1>SEGUINOS EN</h1>
-          <div className="w-auto h-auto flex gap-2">
-            <FontAwesomeIcon
-              icon={faYoutube}
-              width={30}
-              className="hover:text-customGreen hover:drop-shadow-1xl text-white"
-            />
-            <FontAwesomeIcon
-              icon={faFacebook}
-              width={30}
-              className="hover:text-customGreen hover:drop-shadow-1xl text-white"
-            />
-            <FontAwesomeIcon
-              icon={faTwitch}
-              width={30}
-              className="hover:text-customGreen hover:drop-shadow-1xl text-white"
-            />
-            <FontAwesomeIcon
-              icon={faXTwitter}
-              width={30}
-              className="hover:text-customGreen hover:drop-shadow-1xl text-white"
-            />
-            <FontAwesomeIcon
-              icon={faTiktok}
-              width={30}
-              className="hover:text-customGreen hover:drop-shadow-1xl text-white"
-            />
-            <FontAwesomeIcon
-              icon={faInstagram}
-              width={30}
-              className="hover:text-customGreen hover:drop-shadow-1xl text-white"
-            />
-            <FontAwesomeIcon
-              icon={faWhatsapp}
-              width={30}
-              className="hover:text-customGreen hover:drop-shadow-1xl text-white"
-            />
+
+        {/* Social Media Icons */}
+        <div className="border-b-1 lg:border-b-0 lg:border-r-1 border-white flex flex-col items-center justify-center gap-4 py-4">
+          <h2 className="text-white font-semibold">FOLLOW US</h2>
+          <div className="flex gap-3">
+            {[faYoutube, faFacebook, faTwitch, faXTwitter, faTiktok, faInstagram, faWhatsapp].map((icon, i) => (
+              <FontAwesomeIcon
+                key={i}
+                icon={icon}
+                className="text-white hover:text-customGreen hover:drop-shadow-md"
+                width={25}
+              />
+            ))}
           </div>
         </div>
-        <div className="w-full flex flex-col gap-2 items-center justify-center min-h-16">
-            <Link className="text-white">Trabaja con nosotros!</Link>
-            <Link className="text-white">Terminos y Condiciones</Link>
+
+        {/* Legal Links */}
+        <div className="flex flex-col gap-2 items-center justify-center py-4">
+          <Link className="text-white text-sm hover:underline cursor-pointer">Work with us!</Link>
+          <Link className="text-white text-sm hover:underline cursor-pointer">Terms & Conditions</Link>
         </div>
       </div>
-      <div className="w-full h-auto items-center py-1 justify-center bg-white">
-        <h1 className="w-full text-black text-center text-xs">
-          Las marcas y logos de technologyX.com technologyX.com/reviews son
-          Propiedad de Newton Station SRL. <br></br> Todos los derechos
-          reservados 2017. Foto de technologyX
-        </h1>
+
+      {/* Bottom Legal Strip */}
+      <div className="w-full bg-white text-center py-2">
+        <p className="text-black text-xs px-2">
+          The trademarks and logos on technologyX.com and technologyX.com/reviews are owned by Newton Station SRL.
+          <br />
+          All rights reserved © 2017. Photos by technologyX.
+        </p>
       </div>
-    </div>
+    </footer>
   );
 }
