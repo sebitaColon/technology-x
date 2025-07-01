@@ -13,6 +13,24 @@ import { faGamepad } from "@fortawesome/free-solid-svg-icons";
 export default function Banner() {
   return (
     <div className="w-full max-h-[50vh] relative flex justify-center">
+      <div className="absolute grid grid-cols-3 w-full h-10 z-10">
+        <div className="w-full h-full bg-customBlack border-b-1 border-customGreen"></div>
+        <div className="w-full h-full bg-transparent relative overflow-hidden flex items-center justify-center">
+          <div className="w-full border-t-1 border-customGreen h-full"></div>
+          <div className="w-16 h-16 absolute -right-8 border-l-1 border-customGreen bottom-3 bg-customBlack -rotate-45"></div>
+          <div className="w-16 h-16 absolute -left-8 border-b-1 border-customGreen bottom-3 bg-customBlack  -rotate-45"></div>
+        </div>
+        <div className="w-full h-full bg-customBlack border-b-1 border-customGreen"></div>
+      </div>
+      <div className="absolute grid grid-cols-3 w-full h-10 bottom-0 rotate-180 z-10">
+        <div className="w-full h-full bg-customGrayDark border-b-1 border-customGreen"></div>
+        <div className="w-full h-full bg-transparent relative overflow-hidden flex items-center justify-center">
+          <div className="w-full border-t-1 border-customGreen h-full"></div>
+          <div className="w-16 h-16 absolute -right-8 border-l-1 border-customGreen bottom-3 bg-customGrayDark -rotate-45"></div>
+          <div className="w-16 h-16 absolute -left-8 border-b-1 border-customGreen bottom-3 bg-customGrayDark  -rotate-45"></div>
+        </div>
+        <div className="w-full h-full bg-customGrayDark border-b-1 border-customGreen"></div>
+      </div>
       <Image
         src={imgBanner}
         alt=""
