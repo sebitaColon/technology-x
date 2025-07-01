@@ -8,22 +8,22 @@ import monitor from "../assets/monitor.jpeg";
 import ramMemories from "../assets/ramMemories.jpeg";
 import computerCase from "../assets/computerCase.jpeg";
 import videoCard from "../assets/videoCard.webp";
-import Peripherals from "../assets/Peripherals.webp";
+import peripherals from "../assets/Peripherals.webp";
 
 export default function Category() {
   const category = [
-    { img: processor, name: "processor" },
-    { img: sources, name: "sources" },
-    { img: monitor, name: "Monitors" },
-    { img: ramMemories, name: "ram memories" },
-    { img: computerCase, name: "computer case" },
-    { img: Peripherals, name: "Peripherals" },
-    { img: videoCard, name: "video Card" },
-    { img: ramMemories, name: "almacenamiento" },
-    { img: monitor, name: "Monitors" },
-    { img: ramMemories, name: "ram memories" },
-    { img: computerCase, name: "computer Case" },
-    { img: Peripherals, name: "Peripherals" },
+    { img: processor, name: "Processor" },
+    { img: sources, name: "Power Supply" },
+    { img: monitor, name: "Monitor" },
+    { img: ramMemories, name: "RAM Memory" },
+    { img: computerCase, name: "Computer Case" },
+    { img: peripherals, name: "Peripherals" },
+    { img: videoCard, name: "Video Card" },
+    { img: ramMemories, name: "Storage" },
+    { img: processor, name: "Processor" },
+    { img: sources, name: "Power Supply" },
+    { img: monitor, name: "Monitor" },
+    { img: ramMemories, name: "RAM Memory" },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -78,8 +78,8 @@ export default function Category() {
     <div className="w-full flex items-center flex-col h-auto p-10 bg-customBlack">
       <div className="grid grid-cols-3 w-full pb-5">
         <h1 className="text-war justify-end items-start flex flex-col sm:flex-row sm:gap-2 sm:mr-10 sm:items-center col-span-2  md:text-xl lg:text-2xl">
-          EXPLORA <span>NUESTRAS </span>
-          <span className="font-bold text-customGreen">CATEGORIAS</span>
+          EXPLORE <span>OUR </span>
+          <span className="font-bold text-customGreen">CATEGORIES</span>
         </h1>
         {totalItems > visibleItems * 2 ? (
           <div className="w-full flex flex-col items-center sm:flex-row sm:gap-5 justify-start ">
@@ -100,6 +100,7 @@ export default function Category() {
           <></>
         )}
       </div>
+      {/* Featured Category */}
       <div className="justify-center w-full flex-col flex md:flex-row gap-2 items-center">
         <div className="w-[260px] md:w-[300px] h-[308px] xs:w-[378px] sm:w-[528px] lg:w-[408px] lg:h-[408px] group hover:border-[0.5px] hover:border-customGreen  rounded-xl overflow-hidden flex items-end justify-center relative">
           <h1 className="text-white font-bold pb-2 z-20">{`${category[0].name.toLocaleUpperCase()}`}</h1>
@@ -112,6 +113,7 @@ export default function Category() {
             height={100}
           />
         </div>
+        {/* Carousel */}
         <div className="w-full max-w-[261px] xs:max-w-[378px] sm:max-w-[528px] md:max-w-[316px] lg:h-[408px] lg:max-w-[832px] my-1 overflow-hidden">
           <div
             className="grid h-full w-full grid-rows-2 gap-2 grid-flow-col transition-transform duration-500"

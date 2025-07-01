@@ -28,6 +28,7 @@ export default function Nav() {
     <Navbar
       onMenuOpenChange={setIsMenuOpen}
       className="bg-customBlack text-white"
+      maxWidth="full"
     >
       <NavbarContent>
         <NavbarMenuToggle
@@ -35,35 +36,36 @@ export default function Nav() {
           className="sm:hidden"
         />
         <NavbarBrand>
-          <h1 className="font-bold text-medium md:text-xl">
+          <h1 className="text-xl font-bold">
             TECHNOLOGY<span className="text-customGreen">-X</span>
           </h1>
         </NavbarBrand>
       </NavbarContent>
 
-      <NavbarContent className="hidden gap-5 sm:flex" justify="center">
-        {menuItems.map((item, index) => (
-          <NavbarItem key={`${item}-${index}`}>
+      <NavbarContent className="hidden sm:flex gap-5" justify="center">
+        {menuItems.map(({ name, link }, index) => (
+          <NavbarItem key={index}>
             <Link
-              href={item.link}
-              className="relative text-white group font-medium hover:text-customGreen transition-all duration-300"
+              href={link}
+              className="relative font-medium text-white group hover:text-customGreen transition-all duration-300"
             >
-              {item.name}
-              <span className="absolute -bottom-1 left-0 w-0 h-1 bg-customGreen transition-all duration-300 rounded-full group-hover:w-full"></span>
+              {name}
+              <span className="absolute -bottom-1 left-0 w-0 h-1 bg-customGreen rounded-full transition-all duration-300 group-hover:w-full" />
             </Link>
           </NavbarItem>
         ))}
         <FontAwesomeIcon
           icon={faHeart}
-          width={30}
-          className="hover:text-customGreen hover:shadow-custom-green"
+          className="text-white hover:text-customGreen transition"
+          width={24}
         />
       </NavbarContent>
+
       <NavbarMenu className="bg-customGray">
-        {menuItems.map((item, index) => (
-          <NavbarMenuItem key={`${item}-${index}`}>
-            <Link className="w-full text-white" href="#" size="lg">
-              {item.name}
+        {menuItems.map(({ name, link }, index) => (
+          <NavbarMenuItem key={index}>
+            <Link href={link} className="text-white w-full" size="lg">
+              {name}
             </Link>
           </NavbarMenuItem>
         ))}
