@@ -1,36 +1,50 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Technology-X
 
-## Getting Started
+**Technology-X** is a modern e-commerce web application focused on gaming and computer hardware. It provides an immersive UI for users to explore categories, promotions, and featured products from major brands such as MSI, ASUS, and more.
 
-First, run the development server:
+## 📦 Features
+
+- 🎮 Hero and featured banners with platform icons (Steam, Xbox, Unity, etc.)
+- 🖥️ Category slider with responsive behavior
+- 🛒 Product carousel with interactive hover actions
+- 🎧 Product highlights with CTA
+- 📢 Brand ads carousel with auto-sliding images
+- 🌐 Fully responsive layout for mobile and desktop
+- 📱 Integrated social media icons (Facebook, Instagram, Twitch, etc.)
+- 📑 Clean and readable code structure using **Next.js**, **Tailwind CSS**, and **@heroui/react**
+
+## 🛠️ Tech Stack
+
+- **Framework**: [Next.js](https://nextjs.org/)
+- **Styling**: Tailwind CSS
+- **Icons**: Font Awesome
+- **UI Kit**: @heroui/react
+- **Image Optimization**: `next/image`
+
+## 📁 Folder Structure
+- /src
+├── /assets       # Static images
+├── /components   # Reusable UI components
+└── /app          # Next.js routing and pages
+
+## 🧪 Local Development
 
 ```bash
+# 1. Clone the repository
+git clone https://github.com/sebitaColon/technology-x.git
+
+# 2. Navigate into the project
+cd technology-x
+
+# 3. Install dependencies
+npm install
+
+# 4. Start development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+👤 Developed by
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Sebastián Chacón
+GitHub: @sebitaColon
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
