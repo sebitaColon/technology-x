@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import imgBanner from "@/assets/banner1.jpeg";
+import imgBannerCallOfDuty from "@/assets/bannerCallOfDuty.jpeg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faPlaystation,
@@ -32,7 +32,7 @@ export default function Banner() {
         <div className="w-full h-full bg-customGrayDark border-b-1 border-customGreen"></div>
       </div>
       <Image
-        src={imgBanner}
+        src={imgBannerCallOfDuty}
         alt=""
         className="h-[30vh] md:h-[50vh] object-cover w-full"
       />

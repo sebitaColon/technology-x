@@ -2,28 +2,28 @@
 import React, { useEffect, useState } from "react";
 import { Button } from "@heroui/react";
 import Image from "next/image";
-import procesador from "../assets/procesador.jpeg";
-import fuentes from "../assets/fuentes.jpeg";
-import monitores from "../assets/monitores.jpeg";
-import memoriasRAM from "../assets/memoriasRam.jpeg";
-import gabinete from "../assets/gabinete.jpeg";
-import placadeVideo from "../assets/placadevideo.webp";
-import perifericos from "../assets/perifericos.webp";
+import processor from "../assets/processor.webp";
+import sources from "../assets/sources.jpeg";
+import monitor from "../assets/monitor.jpeg";
+import ramMemories from "../assets/ramMemories.jpeg";
+import computerCase from "../assets/computerCase.jpeg";
+import videoCard from "../assets/videoCard.webp";
+import Peripherals from "../assets/Peripherals.webp";
 
 export default function Category() {
   const category = [
-    { img: procesador, name: "procesadores" },
-    { img: fuentes, name: "funtes" },
-    { img: monitores, name: "monitores" },
-    { img: memoriasRAM, name: "memorias ram" },
-    { img: gabinete, name: "gabinetes" },
-    { img: perifericos, name: "equipos y notebooks" },
-    { img: placadeVideo, name: "placas de video" },
-    { img: memoriasRAM, name: "almacenamiento" },
-    { img: monitores, name: "monitores" },
-    { img: memoriasRAM, name: "memorias ram" },
-    { img: gabinete, name: "gabinetes" },
-    { img: perifericos, name: "equipos y notebooks" },
+    { img: processor, name: "processor" },
+    { img: sources, name: "sources" },
+    { img: monitor, name: "Monitors" },
+    { img: ramMemories, name: "ram memories" },
+    { img: computerCase, name: "computer case" },
+    { img: Peripherals, name: "Peripherals" },
+    { img: videoCard, name: "video Card" },
+    { img: ramMemories, name: "almacenamiento" },
+    { img: monitor, name: "Monitors" },
+    { img: ramMemories, name: "ram memories" },
+    { img: computerCase, name: "computer Case" },
+    { img: Peripherals, name: "Peripherals" },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);

@@ -1,5 +1,5 @@
 import React from "react";
-import img from "@/assets/IMPACT.png";
+import imgMouse from "@/assets/mouse.png";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -28,7 +28,7 @@ export default function Head() {
         </button>
       </div>
       <div className="w-full h-full flex flex-col justify-center md:justify-center md:pr-20">
-        <Image src={img} alt="image" className="filter drop-shadow-4xl" />
+        <Image src={imgMouse} alt="image" className="filter drop-shadow-4xl" />
         <div className="w-full md:w-auto flex gap-10 h-10 mt-5 mb-20 justify-center items-center md:justify-end md:pr-24">
           <FontAwesomeIcon
             icon={faFacebook}

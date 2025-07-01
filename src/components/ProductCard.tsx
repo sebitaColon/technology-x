@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import imgEjemplo from "@/assets/IMPACT.png";
+import imgMouse from "@/assets/mouse.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAdd, faCartPlus, faHeart } from "@fortawesome/free-solid-svg-icons";
 
@@ -26,7 +26,7 @@ export default function ProductCard() {
           />
         </div>
         <Image
-          src={imgEjemplo}
+          src={imgMouse}
           alt="imgEjemplo"
           className="h-full w-auto object-cover rounded-2xl"
         />
