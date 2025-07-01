@@ -10,6 +10,8 @@ import {
   NavbarMenuItem,
   Link,
 } from "@heroui/react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHeart } from "@fortawesome/free-solid-svg-icons";
 
 export default function Nav() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -51,6 +53,11 @@ export default function Nav() {
             </Link>
           </NavbarItem>
         ))}
+        <FontAwesomeIcon
+          icon={faHeart}
+          width={30}
+          className="hover:text-customGreen hover:shadow-custom-green"
+        />
       </NavbarContent>
       <NavbarMenu className="bg-customGray">
         {menuItems.map((item, index) => (
