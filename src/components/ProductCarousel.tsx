@@ -1,18 +1,17 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import auriculares from "@/assets/auricular.png";
+import handset from "@/assets/handset.png";
 import { Button } from "@heroui/react";
-import Image from "next/image";
 import ProductCard from "./ProductCard";
 
 export default function ProductCarousel() {
   const products = [
-    auriculares,
-    auriculares,
-    auriculares,
-    auriculares,
-    auriculares,
-    auriculares,
+    handset,
+    handset,
+    handset,
+    handset,
+    handset,
+    handset,
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);

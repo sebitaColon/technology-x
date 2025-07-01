@@ -1,12 +1,12 @@
 import React from 'react'
 import Image from 'next/image'
-import imgAuriculares from '@/assets/auricular.png'
+import imgHandset from '@/assets/handset.png'
 
 export default function ProductOverview() {
   return (
     <div className='bg-customGrayDark p-5 sm:px-20 sm:pt-10 md:pt-0 flex flex-col w-full h-auto lg:py-10 lg:h-[50vh] lg:grid grid-cols-2 lg:px-36'>
         <div className='w-full h-full flex items-center py-10 justify-center'>
-          <Image src={imgAuriculares} className='max-h-[50vh] h-full w-auto' alt='auriculares'></Image>
+          <Image src={imgHandset} className='max-h-[50vh] h-full w-auto' alt='auriculares'></Image>
         </div>
         <div className='flex flex-col justify-center'>
           <h1 className="text-xl md:text-3xl lg:text-5xl  font-bold">Auricular con Cable - Modelo GH-509</h1>
